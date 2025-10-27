@@ -1,0 +1,299 @@
+/* Swiss Design Global Styles */
+
+/* Typography Reset */
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Swiss Design Button Styles */
+.btn-primary {
+  @apply bg-tech-blue text-white font-bold uppercase tracking-wide text-sm;
+  height: 48px;
+  padding: 16px 32px;
+  border-radius: 0px;
+  transition: background-color 150ms linear;
+  outline: none;
+  border: none;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #003D82;
+}
+
+.btn-primary:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.btn-primary:disabled {
+  background-color: #CCCCCC;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  @apply bg-white text-black font-bold uppercase tracking-wide text-sm;
+  height: 48px;
+  padding: 16px 32px;
+  border: 2px solid #000000;
+  border-radius: 0px;
+  transition: all 150ms linear;
+  outline: none;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.btn-secondary:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.btn-secondary:disabled {
+  border-color: #CCCCCC;
+  color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+.btn-destructive {
+  @apply bg-error text-white font-bold uppercase tracking-wide text-sm;
+  height: 48px;
+  padding: 16px 32px;
+  border-radius: 0px;
+  transition: background-color 150ms linear;
+  outline: none;
+  border: none;
+}
+
+.btn-destructive:hover:not(:disabled) {
+  background-color: #990000;
+}
+
+.btn-destructive:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+/* Input Styles */
+.input-field {
+  @apply bg-white text-dark-gray;
+  height: 48px;
+  padding: 12px 16px;
+  border: 1px solid #CCCCCC;
+  border-radius: 0px;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+  transition: none;
+}
+
+.input-field:focus {
+  border: 2px solid #000000;
+  padding: 11px 15px; /* Adjust for border width */
+}
+
+.input-field.error {
+  border: 2px solid #CC0000;
+  padding: 11px 15px;
+}
+
+.input-field.success {
+  border: 2px solid #008A00;
+  padding: 11px 15px;
+}
+
+.input-field:disabled {
+  background-color: #E5E5E5;
+  cursor: not-allowed;
+}
+
+/* Label Styles */
+.form-label {
+  @apply text-body font-medium text-dark-gray;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-label.required::after {
+  content: ' *';
+  color: #CC0000;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white;
+  border: 1px solid #CCCCCC;
+  border-radius: 0px;
+  padding: 32px;
+  box-shadow: none;
+}
+
+.card:hover {
+  border: 2px solid #000000;
+}
+
+.card-dashboard {
+  @apply bg-white;
+  border: 1px solid #CCCCCC;
+  border-radius: 0px;
+  padding: 32px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: border-color 150ms linear;
+}
+
+.card-dashboard:hover {
+  border: 2px solid #000000;
+}
+
+.card-dashboard:focus {
+  outline: 4px solid #0057B7;
+  outline-offset: -4px;
+}
+
+/* Navigation Styles */
+.nav-link {
+  @apply font-bold uppercase tracking-wide text-sm;
+  color: #666666;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: border-bottom-color 150ms linear;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #0057B7;
+  border-bottom-color: #0057B7;
+}
+
+.nav-link.active {
+  color: #0057B7;
+  border-bottom-color: #0057B7;
+}
+
+/* Validation Styles */
+.validation-message {
+  @apply text-small mt-sm;
+  animation: fadeIn 200ms ease-out;
+}
+
+.validation-message.success {
+  color: #008A00;
+}
+
+.validation-message.error {
+  color: #CC0000;
+}
+
+/* Page Layouts */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.page-header {
+  padding: 64px 0 48px 0;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.deregister-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+/* Swiss Design Grid System */
+.swiss-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.swiss-grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .swiss-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-container {
+    padding: 0 16px;
+  }
+  
+  .page-header {
+    padding: 32px 0 24px 0;
+  }
+  
+  .text-display {
+    font-size: 36px;
+  }
+  
+  .text-headline {
+    font-size: 24px;
+  }
+}
+
+/* QR Scanner Overlay */
+.qr-scanner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.qr-scanner-container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 300px;
+}
+
+.qr-scanner-viewfinder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border: 2px solid #FFFFFF;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "color": {
+    "achromatic": {
+      "black": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": "Primary text, strong rules, logo"
+      },
+      "charcoal": {
+        "$type": "color",
+        "$value": "#1A1A1A",
+        "$description": "Secondary headings, icons"
+      },
+      "darkGray": {
+        "$type": "color",
+        "$value": "#333333",
+        "$description": "Body text, form labels"
+      },
+      "mediumGray": {
+        "$type": "color",
+        "$value": "#666666",
+        "$description": "Captions, metadata, disabled text"
+      },
+      "lightGray": {
+        "$type": "color",
+        "$value": "#999999",
+        "$description": "Placeholder text, inactive states"
+      },
+      "borderGray": {
+        "$type": "color",
+        "$value": "#CCCCCC",
+        "$description": "Borders, dividers, input outlines"
+      },
+      "surfaceGray": {
+        "$type": "color",
+        "$value": "#E5E5E5",
+        "$description": "Subtle backgrounds, disabled surfaces"
+      },
+      "backgroundLight": {
+        "$type": "color",
+        "$value": "#F5F5F5",
+        "$description": "Page backgrounds, card surfaces"
+      },
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Primary background, input fields"
+      }
+    },
+    "accent": {
+      "techBlue": {
+        "$type": "color",
+        "$value": "#0057B7",
+        "$description": "Primary CTA, active states, focus indicators"
+      },
+      "techBlueDark": {
+        "$type": "color",
+        "$value": "#003D82",
+        "$description": "Hover states, pressed buttons"
+      }
+    },
+    "semantic": {
+      "success": {
+        "$type": "color",
+        "$value": "#008A00",
+        "$description": "Successful registration, valid input"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "#CC0000",
+        "$description": "Validation errors, destructive actions"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "#CC5500",
+        "$description": "Caution messages, pending states"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "$type": "fontFamily",
+        "$value": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "$description": "Primary typeface for all text"
+      },
+      "monospace": {
+        "$type": "fontFamily",
+        "$value": "'Monaco', 'Courier New', monospace",
+        "$description": "Device IDs and technical identifiers"
+      }
+    },
+    "fontSize": {
+      "display": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Page titles, hero headlines"
+      },
+      "headline": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Section headers"
+      },
+      "subhead": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Card titles, form section headers"
+      },
+      "bodyLarge": {
+        "$type": "dimension",
+        "$value": "18px",
+        "$description": "Intro text, important instructions"
+      },
+      "body": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Form labels, body text, descriptions"
+      },
+      "small": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$description": "Helper text, captions, metadata"
+      },
+      "caption": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Timestamps, footnotes"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": "400",
+        "$description": "Body text, descriptions"
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": "500",
+        "$description": "Form labels, subheadings"
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": "700",
+        "$description": "Headings, buttons, navigation"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$type": "dimension",
+        "$value": "1.1",
+        "$description": "Display text, large headlines"
+      },
+      "snug": {
+        "$type": "dimension",
+        "$value": "1.2",
+        "$description": "Headlines, subheadings"
+      },
+      "normal": {
+        "$type": "dimension",
+        "$value": "1.3",
+        "$description": "Subheads, UI text"
+      },
+      "relaxed": {
+        "$type": "dimension",
+        "$value": "1.5",
+        "$description": "Body text, readable content"
+      }
+    },
+    "letterSpacing": {
+      "tight": {
+        "$type": "dimension",
+        "$value": "-0.02em",
+        "$description": "Large display text"
+      },
+      "normal": {
+        "$type": "dimension",
+        "$value": "0",
+        "$description": "Body and standard text"
+      },
+      "wide": {
+        "$type": "dimension",
+        "$value": "0.05em",
+        "$description": "Uppercase buttons and navigation"
+      }
+    }
+  },
+  "spacing": {
+    "xs": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Icon-text gaps, inline spacing"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Form field padding, related elements"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Form field vertical spacing, paragraphs"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Section padding, card padding"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Major section spacing, page boundaries"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "Navigation bar height, page headers"
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$description": "Dramatic breaks, page margins"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": "Default sharp corners (Swiss design)"
+    },
+    "subtle": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "Buttons and inputs only (optional)"
+    }
+  },
+  "borderWidth": {
+    "thin": {
+      "$type": "dimension",
+      "$value": "1px",
+      "$description": "Standard borders, dividers"
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "Focus states, emphasized rules"
+    },
+    "thick": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Accent borders on active elements"
+    }
+  },
+  "boxShadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0)"
+      },
+      "$description": "Default no shadow (flat hierarchy)"
+    },
+    "subtle": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "3px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0.12)"
+      },
+      "$description": "Optional card elevation"
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": {
+        "$type": "duration",
+        "$value": "150ms",
+        "$description": "Button hover, focus states"
+      },
+      "standard": {
+        "$type": "duration",
+        "$value": "200ms",
+        "$description": "Form validation, page transitions"
+      }
+    },
+    "easing": {
+      "linear": {
+        "$type": "cubicBezier",
+        "$value": [0, 0, 1, 1],
+        "$description": "Mechanical, honest motion"
+      },
+      "easeOut": {
+        "$type": "cubicBezier",
+        "$value": [0, 0, 0.2, 1],
+        "$description": "Slight deceleration for fades"
+      }
+    }
+  }
+}
